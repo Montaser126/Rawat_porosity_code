@@ -1,0 +1,64 @@
+{
+  "outlier_screen": {
+    "features": [
+      "PHID",
+      "PHIS",
+      "PHIDN",
+      "ND_SEP",
+      "NPHI",
+      "GR_N",
+      "LOG_RD_N",
+      "LOG_RS_N",
+      "REL_DEPTH"
+    ],
+    "by_threshold": {
+      "3.0": {
+        "rows": 23049,
+        "flagged": 1,
+        "pct": 0.004
+      },
+      "3.5": {
+        "rows": 23049,
+        "flagged": 0,
+        "pct": 0.0
+      }
+    }
+  },
+  "selected_features": [
+    "PHIE_DERIVED",
+    "VCL",
+    "GR_N",
+    "PHIT",
+    "LOG_RS_N"
+  ],
+  "deployed_lowo": {
+    "pooled_R2": 0.9951,
+    "mean_well_R2": 0.9951,
+    "sd_well_R2": 0.0007,
+    "well_bootstrap_ci95": [
+      0.9946,
+      0.9956
+    ],
+    "min_well_R2": 0.9938,
+    "max_well_R2": 0.9959
+  },
+  "ridge_lowo_selected": {
+    "pooled_R2": 0.9892,
+    "mean_well_R2": 0.9893,
+    "sd_well_R2": 0.001,
+    "well_bootstrap_ci95": [
+      0.9886,
+      0.9899
+    ],
+    "min_well_R2": 0.9876,
+    "max_well_R2": 0.9905
+  },
+  "fewshot_wells_contig_below_random": {
+    "deployed (PHIT, VCL inputs)": 4,
+    "raw-log generalization-first": 8
+  },
+  "fewshot_wells_contig_below_blind": {
+    "deployed (PHIT, VCL inputs)": 0,
+    "raw-log generalization-first": 3
+  }
+}

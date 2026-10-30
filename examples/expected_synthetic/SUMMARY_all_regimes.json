@@ -1,0 +1,40 @@
+{
+  "regime_b": {
+    "backend": "lightgbm",
+    "stages": "all",
+    "selected_features": [
+      "PHIE_DERIVED",
+      "VCL",
+      "GR_N",
+      "PHIT",
+      "LOG_RS_N"
+    ],
+    "lowo_pooled": {
+      "n": 23049,
+      "R2": 0.9950856841463555,
+      "RMSE": 0.007539589883708587,
+      "MAE": 0.005986147142183233,
+      "bias": 0.0001865573123536757,
+      "pearson_r": 0.9975413467995565
+    },
+    "random_pooled": {
+      "n": 4614,
+      "R2": 0.9955826691620874,
+      "RMSE": 0.007159502432679064,
+      "MAE": 0.005657305901046356,
+      "bias": -6.565873782933355e-05,
+      "pearson_r": 0.9977910801329738
+    },
+    "ladder": {
+      "PHIT x (1 - VCL)  (interpreter policy)": 0.9954,
+      "PHIT x (1 - VSH_GR)  (GR-only)": 0.8536,
+      "PHID vs PHIT  (like-for-like)": 0.2062
+    },
+    "runtime_s": 87.2
+  },
+  "regime_a": {
+    "winner": "SimpleMLP+GWO",
+    "winner_test_r2": 0.9825,
+    "backend": "lightgbm"
+  }
+}
